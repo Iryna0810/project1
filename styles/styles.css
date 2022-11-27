@@ -143,3 +143,19 @@ body {
     color: tomato;
     /* padding-left: 10px; */
 }
+
+
+.modal-input:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid tomato;
+}
+.modal-input:not(:focus):not(:placeholder-shown):valid {
+    border: 2px solid teal;
+}
+.error {
+color: red;
+display: none;
+font-size: 12px;
+}
+.modal-input:not(:focus):not(:placeholder-shown):invalid + .error {
+display: block;
+}

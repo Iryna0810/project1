@@ -55,24 +55,33 @@
                 <form action="" class="modal-form">
                     <input 
                     type="text" 
+                    minlength="3"
                     name="user-name" 
                     placeholder="ваше ім'я" 
                     class="modal-input" />
-                    <input type="text" 
+                    <p class="error">Lorem ipsum dolor sit amet.</p>
+                    <input 
+                    type="email" 
                     name="user-email" 
-                    placeholder="ваше пошта" 
-                    class="modal-input" 
+                    placeholder="ваша пошта" 
+                    class="modal-input row"
+                     id="email" 
                     required/>
-                    <input type="text" 
+                    <p class="error">Lorem ipsum dolor sit amet.</p>
+                    <input 
+                    type="tel" 
                     name="user-tel" 
                     placeholder="ваш телефон" 
                     class="modal-input"
-                    required
-                     />
+                    required />
+                    <input 
+                    type="text" 
+                    name="phone" id="phone" placeholder="+38(000)000-00-00" />
                     <button type="submit">Send</button>
                 </form>
             </div>
         </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/validation.js"></script>
 </body>
 </html>
