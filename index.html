@@ -4,30 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Проект test</h1>
-    <ul>
+    <header >
+        <h1>Проект test</h1>
+    <ul class="header">
         <li><a href="#about">About</a></li>
         <li><a href="#team">Team</a></li>
     </ul>
-    <section>
-        <h2 id="about">About</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed ad, fugit eligendi harum dolor architecto repellat, quod culpa amet distinctio rem labore? Culpa assumenda dolorum laudantium ad a totam explicabo!</p>
-    </section>
-    <section>
-        <h2 id="team">Team</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur assumenda fugiat consectetur, nisi amet quam fugit doloremque facilis ducimus modi perspiciatis beatae tenetur debitis libero quae sed incidunt soluta impedit!</p>
-    <img src="./photo/master-bedroom-questions-answers-12.jpg" alt="спальня мрії" width="700">
-    </section>
-    <h3>Як заварити чай</h3>
-    <p>Покрокова інструкція для чайників, просто повтори і у тебе все вийде!</p>
-        <ol>
-        <li>Закип'ятити воду</li>
-        <li>Засипати чай в чашку</li>
-        <li>Налити в чашку окріп</li>
-        <li>Чекати 10 хвилин, після чого можна пити</li>
-    </ol>
+</header>
+
+    <main class="section">
+        <section>
+            <h2 id="about">About</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed ad, fugit eligendi harum dolor architecto repellat, quod culpa amet distinctio rem labore? Culpa assumenda dolorum laudantium ad a totam explicabo!</p>
+        </section>
+            <section class="hero section">
+                <div class="container">
+                    <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+                    <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
+                </div>
+            </section>
+        <section>
+            <h2 id="team">Team</h2>
+            <p  class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur assumenda fugiat consectetur, nisi amet quam fugit doloremque facilis ducimus modi perspiciatis beatae tenetur debitis libero quae sed incidunt soluta impedit!</p>
+        <img src="./photo/master-bedroom-questions-answers-12.jpg" alt="спальня мрії" width="700">
+        </section>
+        <h3>Як заварити чай</h3>
+        <p>Покрокова інструкція для чайників, просто повтори і у тебе все вийде!</p>
+            <ol>
+            <li>Закип'ятити воду</li>
+            <li>Засипати чай в чашку</li>
+            <li>Налити в чашку окріп</li>
+            <li>Чекати 10 хвилин, після чого можна пити</li>
+        </ol>
+    </main>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close" data-modal-close>
+                    <svg class="modal-close-icon" width="18" height="18">
+                        <use href="./images/icons_.svg#icon-close-black-18dp"></use>
+                    </svg>
+                </button>
+                <p class="modal-title">Заголовок модального вікна</p>
+                <form action="" class="modal-form">
+                    <input 
+                    type="text" 
+                    name="user-name" 
+                    placeholder="ваше ім'я" 
+                    class="modal-input" />
+                    <input type="text" 
+                    name="user-email" 
+                    placeholder="ваше пошта" 
+                    class="modal-input" 
+                    required/>
+                    <input type="text" 
+                    name="user-tel" 
+                    placeholder="ваш телефон" 
+                    class="modal-input"
+                    required
+                     />
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
